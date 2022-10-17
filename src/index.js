@@ -3,8 +3,16 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { App } from "./components/App";
 import { ThemeProvider } from "styled-components";
+import { theme } from "./theme";
 
-const theme = { colors: { text: "black", accent: "orange" } };
+// const theme = {
+//   colors: { text: "black", accent: "orange" },
+//   fonts: {
+//     body: "Helvetica, sans-serif",
+//     heading: "Roboto, sans-serif",
+//     monospace: "monospace",
+//   },
+// };
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
