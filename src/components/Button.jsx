@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
+
 const StyledButton = styled.button`
+dispaly:inline-flex;
+align-items:center;
+gap:${p=>p.theme.space[2]}px;
 margin: ${(p) => p.theme.space[0]}px;
 padding-top: ${(p) => p.theme.space[3]}px;
 padding-bottom: ${(p) => p.theme.space[3]}px;
@@ -16,8 +20,7 @@ cursor:pointer;
     background-color: ${(p) => p.theme.colors.secondary};
 }
 `;
-export const Button = ({ type = 'button',disabled = false, children }) => {
-    return <StyledButton type ={type} disabled={disabled}>{children }</StyledButton>
+export const Button = ({icon: Icon=null, type = 'button',disabled = false, children }) => {
+    return <StyledButton type={type} disabled={disabled}>{Icon &&<Icon size ="16"/>}{children }</StyledButton>
 };
 
-//1:05

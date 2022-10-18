@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { HiArchive, HiArrowCircleDown, HiArrowCircleUp, HiBadgeCheck } from "react-icons/hi";
+
 import { Button } from "./Button";
 
 const Text = styled.p`
@@ -16,9 +18,9 @@ export const App = () => {
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, repellat ipsum facere voluptate dicta
         obcaecati deserunt nobis suscipit eaque?
       </Text>
-      <Button>Search</Button>
-      <Button>Filter</Button>
-      <Button>ShowModal</Button>
+      <Button icon={HiArchive}>Search</Button>
+      <Button icon={HiArrowCircleDown}>Filter</Button>
+      <Button icon={HiArrowCircleUp}>ShowModal</Button>
       <Button type="submit">Login</Button>
       <Button type="submit" disabled>
         Login
