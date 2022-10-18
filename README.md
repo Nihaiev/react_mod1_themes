@@ -18,6 +18,7 @@ import { typography, space, color } from 'styled-system'
 
 А потім коли використовуємо цей компонент Box
 ми просто ПРОПСАМИ передаємо значення
+
 <Box
 fontSize={4}
 fontWeight='bold'
