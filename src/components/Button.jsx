@@ -20,4 +20,4 @@ export const Button = ({ type = 'button',disabled = false, children }) => {
     return <StyledButton type ={type} disabled={disabled}>{children }</StyledButton>
 };
 
-//58
+//1:05
