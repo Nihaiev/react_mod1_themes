@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { HiArchive, HiArrowCircleDown, HiArrowCircleUp, HiBadgeCheck } from "react-icons/hi";
 
 import { Button } from "./Button";
+import { Box } from "./Box";
 
 const Text = styled.p`
   color: ${(p) => p.theme.colors.accent};
@@ -13,7 +14,9 @@ const Text = styled.p`
 
 export const App = () => {
   return (
-    <>
+    <Box bg="primary" color="text" pt={3} width="50%" display="flex" alignItems="center">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, repellat ipsum facere voluptate dicta
+      obcaecati deserunt nobis suscipit eaque?
       <Text>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, repellat ipsum facere voluptate dicta
         obcaecati deserunt nobis suscipit eaque?
@@ -25,6 +28,6 @@ export const App = () => {
       <Button type="submit" disabled>
         Login
       </Button>
-    </>
+    </Box>
   );
 };
