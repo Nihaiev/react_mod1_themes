@@ -20,6 +20,9 @@ export const App = () => {
       <Button>Filter</Button>
       <Button>ShowModal</Button>
       <Button type="submit">Login</Button>
+      <Button type="submit" disabled>
+        Login
+      </Button>
     </>
   );
 };
